@@ -1,0 +1,14 @@
+body {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif
+}
+
+.card-group {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.plot {
+    width: 600px;
+    text-align: center;
+    margin-left: 330px;   
+}

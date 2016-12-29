@@ -1,0 +1,23 @@
+<td>
+    <img [src]="movie.Poster" [alt]="title-img">
+</td>
+
+<td>
+    {{movie.Title}}
+</td>
+
+<td>
+    {{movie.Year}}
+</td>
+
+<td>
+    {{movie.imdbRating}}
+</td>
+
+<td>
+    <stars [rating]="movie.imdbRating"></stars>
+</td>
+
+<td>
+    <a [routerLink]="['/movie/', movie.imdbID]" routerLinkActive="active" class="btn btn-primary">Details</a>     
+</td>

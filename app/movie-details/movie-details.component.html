@@ -1,0 +1,20 @@
+<div *ngIf="movie">
+	<div class="card-group">
+		<div class="card">
+			<h1 class="name">{{ movie.Title }}'s details!</h1><br>
+
+			<div class="item">
+				<img class="card-img-top" [src]="movie.Poster" alt="img">
+
+				<div class="card-block">
+					<h4>Genre: {{ movie.Genre }}</h4>
+					<h4 class="plot">{{ movie.Plot }}</h4>
+					<h4>Actors: {{ movie.Actors }}</h4>
+					<h4>IMDB Rating: {{ movie.imdbRating }} </h4>					
+				</div>
+			</div>
+
+			<button (click)="goToMovies()" class="btn btn-primary">Back to movies</button>
+		</div>
+	</div>
+</div>
